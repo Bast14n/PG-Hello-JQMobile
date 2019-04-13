@@ -2,10 +2,10 @@ function init() {
 	document.addEventListener("deviceready",onDeviceReady, false);
 }
 
-// function onDeviceReady() {
-// 	navigator.notification.beep(2);
-// 	deviceInfo();
-// }
+function onDeviceReady() {
+	navigator.notification.beep(2);
+	myInfo();
+}
 
 // function deviceInfo() {
 
@@ -18,3 +18,9 @@ function init() {
 
 // 	document.getElementById("deviceDetails").innerHTML = info;	
 // }
+
+function myInfo(){
+	const info = "Jestem Sebixon i lubie placki";
+
+	document.getElementById("myInterest").textContent = info;
+}
