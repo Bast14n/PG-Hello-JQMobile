@@ -11,7 +11,7 @@
 	<body onload="init()">
 		
 		<!-- My app main page -->
-		<div data-role="page" id="pageone">
+		<div data-role="page" id="pageone" data-dialog="true">
 		  <div data-role="header">
 			<h1>Business card</h1>
 		  </div>
@@ -19,14 +19,14 @@
 			<p>Marian Paździoch</p>
 			<p>mp@gmail.com</p>
 			<p>IT</p>
-			<button onclick="myInfo()">Interest</button>
+			<a href="#pagetwo" onclick="myInfo()">Interest</button>
 			</div>
 		  <div data-role="footer" data-position="fixed">
 			<h1>(c) Sebastian Surówka</h1>
 		  </div> 
 		</div> 
 
-		<div data-role="page" id="pagetwo">
+		<div data-role="page" id="pagetwo" data-dialog="true">
 			<div data-role="header">
 				<a href="#pageone" class="ui-button">back</a>
 				<h1>My interests</h1>
